@@ -1,0 +1,7 @@
+{
+    "name": "kf24/nrpparser",
+    "description": "Parser NIP",
+    "type": "library",
+    "license": "MIT",
+    "require": {}
+}
