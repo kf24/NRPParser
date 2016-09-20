@@ -3,5 +3,10 @@
     "description": "Parser NIP",
     "type": "library",
     "license": "MIT",
-    "require": {}
+    "require": {},
+    "autoload": {
+            "psr-0": {
+                "kf24\\nrpparser": "src/",
+            }
+    }
 }
