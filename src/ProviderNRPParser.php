@@ -1,4 +1,4 @@
-<?php namespace kf24\NRPParser;
+<?php namespace kf24\nrpparser;
 
 use Illuminate\Support\ServiceProvider;
 
