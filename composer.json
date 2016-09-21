@@ -6,7 +6,7 @@
     "require": {},
     "autoload": {
             "psr-0": {
-                "kf24\\nrpparser\\": "src/"
+                "kf24\\nrpparser": "src/"
             }
     }
 }
