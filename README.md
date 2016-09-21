@@ -1,13 +1,13 @@
-# NRPParser
+# NRPParser:
 Parser dla laravela do numerów NIP, REGON PESEL
 
-## Instalacja
+## Instalacja:
 do pliku composer.json w sekcji require-dev dodajemy
 
-### composer.json
+### composer.json:
 'kf24/nrpparser':'dev-master'
 
-### config/app.php
+### config/app.php:
 
     'providers' => \[
 
@@ -15,7 +15,7 @@ do pliku composer.json w sekcji require-dev dodajemy
             kf24\nrpparser\ProviderNRPParser::class,
 
 
-### do walidatira dodajemy
+### do walidatira dodajemy:
 
 \Validator::make(
                 [
