@@ -21,9 +21,7 @@ class ProviderNRPParser extends ServiceProvider
 	public function boot()
 	{
             
-          $this->app['validator']->extended('nip',function($attribute,$value,$parametr){
-              echo $value;
-          });
+          $this->app['validator']->extend('nip', 'kf24\nrpparser\Validation\walidacja@nip');
 
 	}
 
