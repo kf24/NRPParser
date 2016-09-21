@@ -1,9 +1,20 @@
 {
     "name": "kf24/nrpparser",
-    "description": "Parser NIP",
+    "description": "Parser polskich NIP, REGON, PESEL ",
     "type": "library",
+    "homepage": "http://www.orangepi.pl",
+    "keywords": ["laravel", "parser", "nip", "regon", "pesel"],    
     "license": "MIT",
-    "require": {},
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.*"        
+    },
+    "authors": [
+            {
+                "name": "Paweł Łaba",
+                "email": "labapawel@gmail.com"
+            }
+    ],
     "autoload": {
             "psr-0": {
                 "kf24\\nrpparser": "src/"

@@ -17,4 +17,15 @@ do pliku composer.json w sekcji require-dev dodajemy
 
 ### do walidatira dodajemy
 
-$valid=\Validator::make(['numer_nip'=>'xxx-xxx-xx-xx'],['numer_nip'=>'required|nip']);
+\Validator::make(
+                [
+                    'numer_nip'=>'xxxxxxxxxx',
+                    'numer_regon'=>'xxxxxxxx',
+                    'numer_pesel'=>'xxxxxxxxxxx'
+                ], 
+                [
+                    'numer_nip'=>'nip',
+                    'numer_regon'=>'regon',
+                    'numer_pesel'=>'pesel'
+                ]
+          )

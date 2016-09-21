@@ -11,7 +11,7 @@ class ProviderNRPParser extends ServiceProvider
 	 */
 	public function register()
 	{
-            
+             
 	}
 
 
@@ -22,6 +22,8 @@ class ProviderNRPParser extends ServiceProvider
 	{
             
           $this->app['validator']->extend('nip', 'kf24\nrpparser\Validation\walidacja@nip');
+          $this->app['validator']->extend('regon', 'kf24\nrpparser\Validation\walidacja@regon');
+          $this->app['validator']->extend('pesel', 'kf24\nrpparser\Validation\walidacja@pesel');
 
 	}
 
