@@ -20,6 +20,10 @@ class ProviderNRPParser extends ServiceProvider
 	 */
 	public function boot()
 	{
+            
+          $this->app['validator']->extended('nip',function($attribute,$value,$parametr){
+              echo $value;
+          });
 
 	}
 
