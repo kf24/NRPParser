@@ -11,21 +11,25 @@ do pliku composer.json w sekcji require-dev dodajemy
 ### config/app.php
 
         'providers' => \[
-    
-    
                 ..
                 kf24\nrpparser\ProviderNRPParser::class,
 
+### /resources/lang/pl/validation.php
 
-### do walidatira dodajemy
+        'pesel'=> 'Numer pesel jest nieprawidłowy.'
+        'nip'=> 'Numer nip jest nieprawidłowy.'
+        'regon'=> 'Numer regon jest nieprawidłowy.'
+
+
+### Przykładowa walidacja
 
         \Validator::make(
-                        [
+                        [ // dane wejsciowe
                             'numer_nip'=>'xxxxxxxxxx',
                             'numer_regon'=>'xxxxxxxx',
                             'numer_pesel'=>'xxxxxxxxxxx'
                         ], 
-                        [
+                        [ // ustawienie walidatora
                             'numer_nip'=>'nip',
                             'numer_regon'=>'regon',
                             'numer_pesel'=>'pesel'
