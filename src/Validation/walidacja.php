@@ -11,6 +11,8 @@ class walidacja {
                 // walidacja numeru Pesel
                 $pPesel = '/^([0-9]{11})$/';
                 $th_val = preg_replace("/([_ .-])/", '',$value);
+                if($th_val=="00000000000") return false;
+                if((int)$th_val==0) return true;
                 if(preg_match($pPesel, $th_val))
                 {
                  $pPeseltab = [1,3,7,9,1,3,7,9,1,3];
@@ -34,6 +36,8 @@ class walidacja {
     {
         $pregon = "/^([0-9]{9})$/";
         $th_val = preg_replace("/([_ .-])/", '',$value);
+        if($th_val=="000000000") return false;
+        if((int)$th_val==0) return true;
         if(preg_match($pregon, $th_val))
             {
                  $regon = $th_val;
@@ -56,6 +60,8 @@ class walidacja {
         $pNIP= "/^([0-9]{10})$/";
         $pRm = "/([_ .-])/";
         $val = preg_replace($pRm, '',$value);
+        if($val=="0000000000") return false;
+        if((int)$val==0) return true;
         if(preg_match($pNIP, $val))
         {
            $pNIPtab = [6,5,7,2,3,4,5,6,7];
