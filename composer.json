@@ -2,7 +2,6 @@
     "name": "kf24/nrpparser",
     "description": "Parser polskich NIP, REGON, PESEL",
     "type": "library",
-    "homepage": "http://www.orangepi.pl",
     "keywords": ["laravel", "parser", "nip", "regon", "pesel"],    
     "license": "MIT",
     "require": {
